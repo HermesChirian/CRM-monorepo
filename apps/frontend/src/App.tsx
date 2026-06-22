@@ -1,20 +1,18 @@
-import SummaryState from './components/Card.tsx'
+import SummaryState from './components/SummaryState.tsx'
 import Summary from './components/Summary.tsx'
-import PieChart from './components/PieChart.tsx'
 
 
 function App() {
 
   return (
     <>
-      <div className='bg-black opacity-90 w-screen h-screen flex flex-col justify-center items-center'>
-        <div className='bg-gray-500 rounded-2xl w-3xl h-1/10 items-center flex'>
-          <h1 className='bg-blue-900 text-center border-t w-100'>TRAZABILIDAD</h1>
+      <div className='bg-black opacity-90 flex flex-col justify-center items-center gap-10'>
+        <div className='border-white border-2 rounded-2xl items-center place-content-center flex h-13 w-100'>
+          <h1 className='text-white'>TRAZABILIDAD</h1>
           </div>
       
       <Summary/>
-
-      <SummaryState title={'hola'} value={0} children={'hola'}></SummaryState>
+      <SummaryState/>
       </div>
     </>
   )

@@ -125,7 +125,7 @@ function rowContent(_index: number, row: Data) {
 
 export default function Summary() {
   return (
-    <Paper style={{ height: 250, width: '90%' }}>
+    <Paper style={{ height: 500, width: '90%' }}>
       <TableVirtuoso
         data={rows}
         components={VirtuosoTableComponents}
